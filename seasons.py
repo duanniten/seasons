@@ -25,9 +25,9 @@ class BornDate(date):
             try:
                 return BornDate(int(y), int(m) , int(d))
             except ValueError:
-                sys.exit()
+                sys.exit(1)
         else:
-            sys.exit()
+            sys.exit(1)
 
 def main():
     born_date = BornDate.set_date()
